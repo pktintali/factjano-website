@@ -1,4 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    images: {
+        remotePatterns: [
+          {
+            protocol: 'https',
+            hostname: 'factjano-public-images.s3.ap-south-1.amazonaws.com',
+          },
+          {
+            protocol: 'https',
+            hostname: 'factjano.com',
+          },
+        ],
+      },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
