@@ -10,6 +10,14 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'factjano.com',
           },
+          {
+            protocol: 'https',
+            hostname: 'play.google.com',
+          },
+          {
+            protocol: 'https',
+            hostname: 'user-images.githubusercontent.com',
+          },
         ],
       },
 };

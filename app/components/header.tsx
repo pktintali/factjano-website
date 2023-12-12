@@ -17,7 +17,7 @@ const Header: React.FC = () => {
         </Link>
         <Link href="/">
           <h1 className="text-4xl font-bold">
-            Fact<span className="text-indigo-400">Jano</span>
+            Fact<span className="text-blue-500">Jano</span>
           </h1>
         </Link>
       </div>
