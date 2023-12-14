@@ -18,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/factjano_logo.png" sizes="any" />
       <body className={inter.className}>
         <section className="py-2 px-4 sm:px-16 sm:py-6">
           <nav className="pb-14">

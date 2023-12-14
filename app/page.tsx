@@ -1,30 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const gradientTextClass =
+  "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-400";
+
 export default function Home() {
   return (
     <main>
       <h2 className="text-4xl font-semibold">
-        <span className="text-blue-500">Explore </span> and Learn{" "}
-        <span className="text-blue-500">Amazing Facts</span> at Your{" "}
-        <span className="text-blue-500">Fingertips!</span>
+        <span className={gradientTextClass}>Explore </span> and Learn{" "}
+        <span className={gradientTextClass}>Amazing Facts</span> at Your{" "}
+        <span className={gradientTextClass}>Fingertips!</span>
       </h2>
       {/* <p className="py-6 text-justify text-xl">
         Discover captivating trivia and insightful facts on FactJano, an
         intuitive app designed for easy exploration and endless knowledge on
         various subjects.
       </p> */}
-      <p className="py-6 text-justify text-xl">
+      <p className="py-6 text-justify text-gray-400 text-xl">
         Dive into a vast{" "}
-        <span className="text-blue-500">collection of topics</span>, including{" "}
-        <span className="text-blue-500">science</span>, history,
-        <span className="text-blue-500"> nature</span>,{" "}
-        <span className="text-blue-500">technology</span>, and more. With
+        <span className={gradientTextClass}>collection of topics</span>,
+        including <span className={gradientTextClass}>science</span>, history,
+        <span className={gradientTextClass}> nature</span>,{" "}
+        <span className={gradientTextClass}>technology</span>, and more. With
         FactJano, there is always
-        <span className="text-blue-500"> something new to learn</span> and
+        <span className={gradientTextClass}> something new to learn</span> and
         explore. Each fact is beautifully presented in a card format, making it{" "}
-        <span className="text-blue-500"> easy and enjoyable to read</span> just
-        keep swiping and learning.
+        <span className={gradientTextClass}> easy and enjoyable to read</span>{" "}
+        just keep swiping and learning.
       </p>
       <div className="flex flex-wrap">
         <div className="pt-5 pl-5 sm:pl-0" style={{ width: 300 }}>

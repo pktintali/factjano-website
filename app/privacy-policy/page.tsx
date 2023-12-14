@@ -1,6 +1,6 @@
 export default function PrivacyPolicy() {
   return (
-    <div>
+    <div className="text-gray-200">
       <h1 className="text-2xl font-bold mb-4">Privacy Policy</h1>
       <p className="mb-4">Last updated: Dec 05, 2023</p>
       <p className="mb-4">
