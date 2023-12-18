@@ -103,36 +103,8 @@ export default function Home() {
         <div>
           <ReviewCard
             rating={5}
-            review="Very good for reading facts. Loving it"
-            username="Suray Prakash"
-          />
-        </div>
-        <div>
-          <ReviewCard
-            rating={5}
-            review="this best aap for increase your GK and time pass, with amazing facts ❤️"
-            username="Donald' Trump अमेरिका वाले"
-          />
-        </div>
-        <div>
-          <ReviewCard
-            rating={5}
             review="It is very nice app for knowledge It has different categories . thanks for this type of app ."
             username="Ramkrishna Mishra"
-          />
-        </div>
-        <div>
-          <ReviewCard
-            rating={5}
-            review="Great app for reading facts. Beautiful UI and easy to use. I love fact jano ❤️"
-            username="OIC"
-          />
-        </div>
-        <div>
-          <ReviewCard
-            rating={5}
-            review="User experience is great and read more feature is what I liked the most 🚀🚀."
-            username="Kishore Kumar Singh K"
           />
         </div>
         <div>
