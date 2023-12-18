@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "FactJano",
   description:
-    "Amazing facts, daily new facts and facts for youtube channel all on FactJano.",
+    "Discover amazing facts, daily new facts and facts for youtube channel on FactJano",
 };
 
 export default function RootLayout({
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/factjano_logo.png" sizes="any" />
+      <link rel="icon" href="/factjano_logo_96.png" sizes="any" />
       <body className={inter.className}>
         <section className="py-2 px-4 sm:px-16 sm:py-6">
           <nav className="pb-14">
@@ -27,6 +28,9 @@ export default function RootLayout({
             <hr /> */}
           </nav>
           {children}
+          <section className="h-3">
+            <Footer />
+          </section>
         </section>
       </body>
     </html>

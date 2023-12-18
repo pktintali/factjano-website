@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import ReviewCard from "./components/review_box";
 
 const gradientTextClass =
   "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-400";
@@ -62,6 +63,100 @@ export default function Home() {
           alt="Get it on Google Play"
           src="/banner.png"
         />
+      </div>
+      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div>
+          <ReviewCard
+            rating={5}
+            review="Best app for facts I ever found 🔥🔥"
+            username="Prakhar Gupta"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={4}
+            review="Superb app free to use amazing facts loved it 💕👍"
+            username="Aliza Baig"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="Outstanding I never used applications like this just amazing 🤩"
+            username="Ayush Baranwal"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="There are so many interesting facts to enrich GK"
+            username="Harshansh Gondi"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="Great user experience and informative application."
+            username="Harsh Gupta"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="Very good for reading facts. Loving it"
+            username="Suray Prakash"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="this best aap for increase your GK and time pass, with amazing facts ❤️"
+            username="Donald' Trump अमेरिका वाले"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="It is very nice app for knowledge It has different categories . thanks for this type of app ."
+            username="Ramkrishna Mishra"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="Great app for reading facts. Beautiful UI and easy to use. I love fact jano ❤️"
+            username="OIC"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="User experience is great and read more feature is what I liked the most 🚀🚀."
+            username="Kishore Kumar Singh K"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="Love this app and to know the facts🤩. Graphic is too good and it's user friendly. Highly recommend!!!♡✌️."
+            username="Rabbia Khan"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="Very very fantastic app with seamless user experience."
+            username="Gyanendra Mohan Patel"
+          />
+        </div>
+        <div>
+          <ReviewCard
+            rating={5}
+            review="FactJano is an awesome app for anyone who loves to learn. It delivers fascinating and random facts on a daily basis, covering a wide range of topics. The app's sleek design and ease of use make it a winner. It's like having a mini encyclopedia in your pocket, but way cooler. Highly recommended for anyone who wants to expand their knowledge and have fun doing it!"
+            username="Pratham Gupta"
+          />
+        </div>
+        {/* Add more items as needed */}
       </div>
     </main>
   );
