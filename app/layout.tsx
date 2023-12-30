@@ -7,9 +7,33 @@ import Footer from "./components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://factjano.com"),
   title: "FactJano: Explore Amazing Facts about AI, Life, YouTube & More",
   description:
     "A fun to use app to discover amazing random facts on various topics such as science, history, animals, AI, food, and more.",
+  applicationName: "FactJano",
+  keywords: [
+    "Fun facts",
+    "Random facts",
+    "Science trivia",
+    "History tidbits",
+    "AI insights",
+    "Technology curiosities",
+    "Educational app",
+    "Interesting discoveries",
+    "Curated information",
+    "Fascinating knowledge",
+    "Unique insights",
+    "Quirky discoveries",
+    "Fact exploration",
+    "Information delight",
+    "Diverse facts",
+    "Engaging learning",
+    "FactJano app",
+    "Fact discovery tool",
+    "Entertaining knowledge",
+    "Varied trivia insights",
+  ],
 };
 
 export default function RootLayout({
