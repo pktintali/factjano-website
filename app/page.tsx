@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import ReviewCard from "./components/review_box";
 
-const gradientTextClass =
+export default function Home() {
+
+  const gradientTextClass =
   "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-400";
 
-export default function Home() {
   return (
     <main>
       <h2 className="text-4xl font-semibold">
@@ -60,7 +61,7 @@ export default function Home() {
           className="rounded"
           width={1000}
           height={500}
-          alt="Get it on Google Play"
+          alt="FactJano Banner"
           src="/banner.png"
         />
       </div>
@@ -124,7 +125,7 @@ export default function Home() {
         <div>
           <ReviewCard
             rating={5}
-            review="FactJano is an awesome app for anyone who loves to learn. It delivers fascinating and random facts on a daily basis, covering a wide range of topics. The app's sleek design and ease of use make it a winner. It's like having a mini encyclopedia in your pocket, but way cooler. Highly recommended for anyone who wants to expand their knowledge and have fun doing it!"
+            review="Awesome app for anyone who loves to learn. It delivers fascinating and random facts on a daily basis, covering a wide range of topics. The app's sleek design and ease of use make it a winner. It's like having a mini encyclopedia in your pocket, but way cooler. Highly recommended for anyone who wants to expand their knowledge and have fun doing it!"
             username="Pratham Gupta"
           />
         </div>

@@ -7,9 +7,9 @@ import Footer from "./components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "FactJano",
+  title: "FactJano: Explore Amazing Facts about AI, Life, YouTube & More",
   description:
-    "Discover amazing facts, daily new facts and facts for youtube channel on FactJano",
+    "A fun to use app to discover amazing random facts on various topics such as science, history, animals, AI, food, and more.",
 };
 
 export default function RootLayout({
@@ -20,17 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <section className="py-2 px-4 sm:px-16 sm:py-6">
-          <nav className="pb-14">
-            <Header />
-            {/* <div className="h-3"></div>
-            <hr /> */}
-          </nav>
-          {children}
-          <section className="h-3">
-            <Footer />
-          </section>
-        </section>
+        <Header />
+        <section className="py-2 px-4 sm:px-16 sm:py-6">{children}</section>
+        <Footer />
       </body>
     </html>
   );
