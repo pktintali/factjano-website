@@ -19,7 +19,7 @@ export default function Home() {
         intuitive app designed for easy exploration and endless knowledge on
         various subjects.
       </p> */}
-      <p className="py-6 text-justify text-gray-400 text-xl">
+      <p className="py-6 text-justify text-gray-600 dark:text-gray-400 text-xl">
         Dive into a vast{" "}
         <span className={gradientTextClass}>collection of topics</span>,
         including <span className={gradientTextClass}>science</span>, history,
