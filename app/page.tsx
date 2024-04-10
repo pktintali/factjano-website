@@ -5,7 +5,7 @@ import ReviewCard from "./components/review_box";
 export default function Home() {
 
   const gradientTextClass =
-  "text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-400";
+  "text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400";
 
   return (
     <main>
@@ -14,6 +14,15 @@ export default function Home() {
         <span className={gradientTextClass}>Amazing Facts</span> at Your{" "}
         <span className={gradientTextClass}>Fingertips!</span>
       </h2>
+      <div className="pt-4">
+        <Image
+          className="rounded md:hidden"
+          width={1000}
+          height={500}
+          alt="FactJano Banner"
+          src="/factjano_banner_v2.png"
+        />
+      </div>
       {/* <p className="py-6 text-justify text-xl">
         Discover captivating trivia and insightful facts on FactJano, an
         intuitive app designed for easy exploration and endless knowledge on
@@ -28,20 +37,10 @@ export default function Home() {
         FactJano, there is always
         <span className={gradientTextClass}> something new to learn</span> and
         explore. Each fact is beautifully presented in a card format, making it{" "}
-        <span className={gradientTextClass}> easy and enjoyable to read</span>{" "}
+        <span className={gradientTextClass}> fun </span> and <span className={gradientTextClass}> easy to read</span>{" "}
         just keep swiping and learning.
       </p>
       <div className="flex flex-wrap">
-        <div className="pt-5 pl-5 sm:pl-0" style={{ width: 300 }}>
-          <Link href="https://app.factjano.com" target="_blank">
-            <Image
-              width={260}
-              height={100}
-              alt="Launch as PWA"
-              src="https://user-images.githubusercontent.com/9122190/28998409-c5bf7362-7a00-11e7-9b63-db56694522e7.png"
-            />
-          </Link>
-        </div>
         <div style={{ width: 300 }}>
           <Link
             href="https://play.google.com/store/apps/details?id=com.tdevelopers.factjano&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
@@ -55,17 +54,28 @@ export default function Home() {
             />
           </Link>
         </div>
+        <div className="sm:pt-5 ml-5 pt-2" style={{ width: 300 }}>
+            <Image
+              className="dark:border rounded-lg border-gray-400 opacity-60"
+              width={220}
+              height={100}
+              alt="Coming Soon on App Store"
+              src="https://1radionews.com/wp-content/uploads/app_store_coming_soon.png"
+            />
+        </div>
       </div>
       <div className="pt-4">
         <Image
-          className="rounded"
+          className="rounded hidden md:block"
           width={1000}
           height={500}
           alt="FactJano Banner"
-          src="/banner.png"
+          src="/factjano_banner_v2.png"
         />
       </div>
-      <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="h-12 hidden md:block"></div>
+      <hr className="my-8"/>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div>
           <ReviewCard
             rating={5}
