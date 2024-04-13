@@ -22,12 +22,6 @@ const Header: React.FC = () => {
       
       <nav>
         <ul className="flex space-x-4">
-        <li>
-            <Link href="https://www.producthunt.com/posts/factjano-2-0?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-factjano&#0045;2&#0045;0" target="_blank">
-            <Image src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=450286&theme=light" alt="FactJano&#0032;2&#0046;0 - World&#0039;s&#0032;1st&#0032;AI&#0032;Powered&#0032;Fact&#0032;App | Product Hunt" width="250" height="54" className="hidden md:block"/>
-            </Link>
-          </li>
-          <li></li>
           <li>
             <Link href="https://twitter.com/factjano" target="_blank">
               <svg
