@@ -22,12 +22,7 @@ const nextConfig = {
             protocol: 'https',
             hostname: '1radionews.com',
           },
-          {
-            protocol: 'https',
-            hostname: 'api.producthunt.com',
-          },
         ],
-        dangerouslyAllowSVG: true,
       },
 };
 
