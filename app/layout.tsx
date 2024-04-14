@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://factjano.com"),
-  title: "FactJano: Explore Amazing Facts about Science, History, AI & More",
+  title: "FactJano: Simple and Powerful Fact Reading app, Now powered by AI ⚡️",
   description:
     "A fun to use app to discover amazing random facts on various topics such as science, history, animals, AI, food, and more.",
   applicationName: "FactJano",
