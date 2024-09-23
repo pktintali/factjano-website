@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
-    <header className="pb-14 py-2 px-4 sm:px-16 sm:py-6 flex items-center justify-between">
+    <header className="pb-6 py-2 px-6 sm:px-64 sm:py-6 flex items-center justify-between relative">
       <Link href="/">
         <div className="flex items-center">
           <Image
@@ -19,7 +19,7 @@ const Header: React.FC = () => {
           </h1>
         </div>
       </Link>
-      
+
       <nav>
         <ul className="flex space-x-4">
           <li>
@@ -39,6 +39,10 @@ const Header: React.FC = () => {
           </li>
         </ul>
       </nav>
+
+      <div className="hidden sm:block absolute top-0 right-0 mt-2 mr-2 bg-yellow-300 text-black px-2 py-1 rounded">
+        V3.0 coming soon
+      </div>
     </header>
   );
 };

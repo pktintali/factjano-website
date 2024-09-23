@@ -20,7 +20,7 @@ const nextConfig = {
           },
           {
             protocol: 'https',
-            hostname: '1radionews.com',
+            hostname: 'upload.wikimedia.org',
           },
         ],
       },
