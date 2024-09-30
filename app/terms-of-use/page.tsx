@@ -147,15 +147,15 @@ export default function TermsOfUse() {
         You agree not to use the Service for any purpose that is unlawful or
         prohibited by these Terms of Use. You also agree not to use the Service
         in any manner that could damage, disable, overburden, or impair the
-        Service or interfere with any other party's use and enjoyment of the
-        Service.
+        Service or interfere with any other party&apos;s use and enjoyment of
+        the Service.
       </p>
 
       <h2 className="text-xl font-bold mb-2 pt-6">
         13. Disclaimer of Warranties
       </h2>
       <p className="mb-4">
-        The Service is provided on an "AS IS" and "AS AVAILABLE" basis. FactJano
+        The Service is provided on an &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; basis. FactJano
         makes no representations or warranties of any kind, express or implied,
         as to the operation of the Service or the information, content,
         materials, or products included on the Service. You expressly agree that
