@@ -7,6 +7,9 @@ export default function Footer() {
       <Link href="/privacy-policy" className="underline">
         Privacy & Policy
       </Link>
+      <Link href="/terms-of-use" className="underline">
+        Terms of Use
+      </Link>
     </footer>
   );
 }

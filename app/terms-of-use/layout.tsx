@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FactJano Privacy and Policy",
+  title: "FactJano Terms of Use",
 };
 
 export default function RootLayout({
