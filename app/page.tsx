@@ -4,25 +4,30 @@ import ReviewCard from "./components/review_box";
 
 export default function Home() {
   const gradientTextClass =
-    "text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400";
+    "bg-gradient-to-r from-blue-400 to-green-500 text-transparent bg-clip-text";
 
   return (
     <main className="px-4 py-2 md:px-16 lg:px-32 xl:px-48">
       <section className="text-center">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-3xl md:text-6xl font-bold leading-tight">
           <span className="inline-block bg-gradient-to-r from-blue-600 to-blue-400 dark:from-yellow-300 dark:to-yellow-500 text-transparent bg-clip-text sm:py-2">
             Micro-Learning
           </span>{" "}
           Like Never Before
         </h1>
         <div className="pt-8 flex justify-center">
-          <Image
-            className="rounded-xl md:hidden"
-            width={1000}
-            height={500}
-            alt="FactJano Banner"
-            src="/factjano_banner_v2.png"
-          />
+          <section className="flex justify-center flex-wrap gap-2 md:hidden">
+            {Array.from({ length: 3 }, (_, i) => (
+              <Image
+                key={i}
+                className="rounded-lg rounded transform hover:scale-105 transition duration-300"
+                width={90}
+                height={100}
+                alt={`FactJano Banner ${i + 1}`}
+                src={`/frames/f${i + 1}.png`}
+              />
+            ))}
+          </section>
         </div>
       </section>
 
@@ -41,10 +46,33 @@ export default function Home() {
           swiping and learning.
         </p>
       </section>
-
-      <section className="flex flex-wrap justify-center gap-4 items-center">
+      <section className="md:hidden flex flex-wrap justify-center gap-0 items-center">
         <Link
-          href="https://play.google.com/store/apps/details?id=com.tdevelopers.factjano&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+          href="https://play.google.com/store/apps/details?id=com.tdevelopers.factjano?ref=website"
+          target="_blank"
+        >
+          <Image
+            width={155}
+            height={100}
+            alt="Get it on Google Play"
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+          />
+        </Link>
+        <Link
+          href="https://apps.apple.com/us/app/random-fun-facts-factjano/id6664073325?ref=website"
+          target="_blank"
+        >
+          <Image
+            width={135}
+            height={100}
+            alt="Download on the app store"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
+          />
+        </Link>
+      </section>
+      <section className=" hidden md:flex flex flex-wrap justify-center gap-4 items-center">
+        <Link
+          href="https://play.google.com/store/apps/details?id=com.tdevelopers.factjano?ref=website"
           target="_blank"
         >
           <Image
@@ -54,31 +82,47 @@ export default function Home() {
             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
           />
         </Link>
-        <div className="relative">
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 rounded-lg">
-            <span className="text-white text-2xl font-bold">Coming Soon</span>
-          </div>
+        <Link
+          href="https://apps.apple.com/us/app/random-fun-facts-factjano/id6664073325?ref=website"
+          target="_blank"
+        >
           <Image
-            className="dark:border rounded-lg border-gray-400"
             width={260}
             height={100}
-            alt="Coming Soon on App Store"
+            alt="Download on the app store"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
           />
-        </div>
+        </Link>
+      </section>
+      <section className="hidden md:flex justify-center py-2">
+        <details className="w-full max-w-md bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
+          <summary className="cursor-pointer text-center text-lg font-semibold text-blue-600 dark:text-yellow-300 hover:text-blue-800 dark:hover:text-yellow-500 transition-colors duration-300">
+            Show QR Code
+          </summary>
+          <div className="flex justify-center py-12">
+            <Image
+              src="/download_qr.png"
+              alt="QR Code"
+              width={300}
+              height={300}
+            />
+          </div>
+        </details>
+      </section>
+      <section className="hidden md:flex pt-8 flex justify-center flex-wrap gap-4">
+        {Array.from({ length: 6 }, (_, i) => (
+          <Image
+            key={i}
+            className="rounded transform hover:scale-105 transition duration-300 hidden md:block"
+            width={200}
+            height={150}
+            alt={`FactJano Banner ${i + 1}`}
+            src={`/frames/f${i + 1}.png`}
+          />
+        ))}
       </section>
 
-      <section className="pt-4 flex justify-center">
-        <Image
-          className="rounded hidden md:block"
-          width={1000}
-          height={500}
-          alt="FactJano Banner"
-          src="/factjano_banner_v2.png"
-        />
-      </section>
-
-      <section className="my-12">
+      <section className="my-8 md:my-14">
         <hr className="border-gray-300 dark:border-gray-600" />
       </section>
 
