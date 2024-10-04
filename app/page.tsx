@@ -51,7 +51,7 @@ export default function Home() {
       </section>
       <section className="md:hidden flex flex-wrap justify-center gap-0 items-center">
         <Link
-          href="https://play.google.com/store/apps/details?id=com.tdevelopers.factjano?ref=website"
+          href="https://play.google.com/store/apps/details?id=com.tdevelopers.factjano&ref=website"
           target="_blank"
         >
           <Image
@@ -75,7 +75,7 @@ export default function Home() {
       </section>
       <section className=" hidden md:flex flex flex-wrap justify-center gap-4 items-center">
         <Link
-          href="https://play.google.com/store/apps/details?id=com.tdevelopers.factjano?ref=website"
+          href="https://play.google.com/store/apps/details?id=com.tdevelopers.factjano&ref=website"
           target="_blank"
         >
           <Image
