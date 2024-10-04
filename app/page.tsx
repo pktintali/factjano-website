@@ -18,7 +18,7 @@ export default function Home() {
             Every Day
           </span>
         </h1>
-        <div className="pt-8 flex justify-center">
+        <div className="pt-8 flex justify-center md:hidden">
           <section className="flex justify-center flex-wrap gap-2 md:hidden">
             {Array.from({ length: 3 }, (_, i) => (
               <Image
@@ -79,7 +79,7 @@ export default function Home() {
           target="_blank"
         >
           <Image
-            width={300}
+            width={240}
             height={100}
             alt="Get it on Google Play"
             src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
@@ -90,14 +90,14 @@ export default function Home() {
           target="_blank"
         >
           <Image
-            width={260}
+            width={200}
             height={100}
             alt="Download on the app store"
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/2560px-Download_on_the_App_Store_Badge.svg.png"
           />
         </Link>
       </section>
-      <section className="hidden md:flex justify-center py-2">
+      <section className="hidden md:flex justify-center py-2 pl-4">
         <details className="w-full max-w-md bg-white dark:bg-gray-800 rounded-lg shadow-md p-4">
           <summary className="cursor-pointer text-center text-lg font-semibold text-blue-600 dark:text-yellow-300 hover:text-blue-800 dark:hover:text-yellow-500 transition-colors duration-300">
             Show QR Code
@@ -113,11 +113,11 @@ export default function Home() {
         </details>
       </section>
       <section className="hidden md:flex pt-8 flex justify-center flex-wrap gap-4">
-        {Array.from({ length: 6 }, (_, i) => (
+        {Array.from({ length: 4 }, (_, i) => (
           <Image
             key={i}
             className="rounded transform hover:scale-105 transition duration-300 hidden md:block"
-            width={200}
+            width={225}
             height={150}
             alt={`FactJano Banner ${i + 1}`}
             src={`/frames/f${i + 1}.png`}
