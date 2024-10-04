@@ -11,9 +11,12 @@ export default function Home() {
       <section className="text-center">
         <h1 className="text-3xl md:text-6xl font-bold leading-tight">
           <span className="inline-block bg-gradient-to-r from-blue-600 to-blue-400 dark:from-yellow-300 dark:to-yellow-500 text-transparent bg-clip-text sm:py-2">
-            Micro-Learning
+            Learn
           </span>{" "}
-          Like Never Before
+          Something New{" "}
+          <span className="inline-block bg-gradient-to-r from-blue-600 to-blue-400 dark:from-yellow-300 dark:to-yellow-500 text-transparent bg-clip-text sm:py-2">
+            Every Day
+          </span>
         </h1>
         <div className="pt-8 flex justify-center">
           <section className="flex justify-center flex-wrap gap-2 md:hidden">
