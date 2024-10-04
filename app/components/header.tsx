@@ -22,6 +22,7 @@ const Header: React.FC = () => {
       </Link>
 
       <a
+        className="hidden md:block"
         href="https://www.producthunt.com/posts/factjano-fun-easy-learning?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-factjano&#0045;fun&#0045;easy&#0045;learning"
         target="_blank"
       >
