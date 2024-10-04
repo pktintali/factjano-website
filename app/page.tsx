@@ -41,7 +41,7 @@ export default function Home() {
           including <span className={gradientTextClass}>science</span>, history,
           <span className={gradientTextClass}> nature</span>,{" "}
           <span className={gradientTextClass}>technology</span>, and more. With
-          FactJano, there is always
+          FactJano AI, there is always
           <span className={gradientTextClass}> something new to learn</span> and
           explore. Each fact is beautifully presented in a card format, making
           it <span className={gradientTextClass}> fun </span> and{" "}
