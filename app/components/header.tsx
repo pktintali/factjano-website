@@ -20,20 +20,6 @@ const Header: React.FC = () => {
           </h1>
         </div>
       </Link>
-
-      <a
-        className="hidden md:block"
-        href="https://www.producthunt.com/posts/factjano-fun-easy-learning?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-factjano&#0045;fun&#0045;easy&#0045;learning"
-        target="_blank"
-      >
-        <img
-          src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=492871&theme=light"
-          alt="FactJano&#0058;&#0032;Fun&#0032;&#0038;&#0032;Easy&#0032;Learning - AI&#0032;powered&#0032;simple&#0032;and&#0032;beautiful&#0032;micro&#0032;learning&#0032;app | Product Hunt"
-          width="250"
-          height="54"
-        />
-      </a>
-
       <nav>
         <ul className="flex space-x-4">
           <li>
